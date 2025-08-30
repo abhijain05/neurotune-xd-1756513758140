@@ -13,13 +13,13 @@ sap.ui.define([
      * The component is initialized by UI5 automatically during the startup of the app
      */
     init: function () {
-      // Call the base component's init function
+      // call the base component's init function
       UIComponent.prototype.init.apply(this, arguments);
 
-      // Set device model
-      this.setModel(new sap.ui.model.json.JSONModel(sap.ui.Device), "device");
+      // set the device model
+      this.setModel(new sap.ui.model.json.JSONModel(Device), "device");
 
-      // Initialize the router for navigation
+      // create the views based on the url/hash
       this.getRouter().initialize();
     }
   });

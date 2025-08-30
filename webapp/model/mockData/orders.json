@@ -1,0 +1,184 @@
+{
+  "orders": [
+    {
+      "orderId": "ORD-2023-1001",
+      "customerId": "CUST-10001",
+      "date": "2023-11-01",
+      "status": "Shipped",
+      "totalAmount": 1299.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20001",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "123 Main St",
+        "city": "Anytown",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1002",
+      "customerId": "CUST-10002",
+      "date": "2023-11-05",
+      "status": "Pending",
+      "totalAmount": 999.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20002",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "456 Oak Ave",
+        "city": "Springfield",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1003",
+      "customerId": "CUST-10003",
+      "date": "2023-11-10",
+      "status": "Delivered",
+      "totalAmount": 399.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20003",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "789 Pine Ln",
+        "city": "Hill Valley",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1004",
+      "customerId": "CUST-10004",
+      "date": "2023-11-15",
+      "status": "Shipped",
+      "totalAmount": 1499.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20004",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "101 Elm St",
+        "city": "Gotham City",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1005",
+      "customerId": "CUST-10005",
+      "date": "2023-11-20",
+      "status": "Pending",
+      "totalAmount": 29.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20005",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "222 Maple Ave",
+        "city": "Metropolis",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1006",
+      "customerId": "CUST-10006",
+      "date": "2023-11-25",
+      "status": "Delivered",
+      "totalAmount": 79.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20006",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "333 Cherry Rd",
+        "city": "Sunnyvale",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1007",
+      "customerId": "CUST-10007",
+      "date": "2023-11-30",
+      "status": "Shipped",
+      "totalAmount": 249.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20007",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "444 Oak St",
+        "city": "Riverside",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1008",
+      "customerId": "CUST-10008",
+      "date": "2023-12-05",
+      "status": "Pending",
+      "totalAmount": 149.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20008",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "555 Pine Ave",
+        "city": "Oceanview",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1009",
+      "customerId": "CUST-10009",
+      "date": "2023-12-10",
+      "status": "Delivered",
+      "totalAmount": 99.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20009",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "666 Elm St",
+        "city": "Mountainview",
+        "country": "USA"
+      }
+    },
+    {
+      "orderId": "ORD-2023-1010",
+      "customerId": "CUST-10010",
+      "date": "2023-12-15",
+      "status": "Shipped",
+      "totalAmount": 49.99,
+      "lineItems": [
+        {
+          "productId": "PROD-20010",
+          "quantity": 1
+        }
+      ],
+      "deliveryInfo": {
+        "address": "777 Maple Rd",
+        "city": "Lakeside",
+        "country": "USA"
+      }
+    }
+  ]
+}

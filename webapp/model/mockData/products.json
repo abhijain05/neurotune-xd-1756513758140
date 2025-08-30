@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "productId": "PROD-20001",
+      "name": "Laptop",
+      "description": "High-performance laptop for professionals",
+      "category": "Electronics",
+      "price": 1299.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/laptop.jpg"
+    },
+    {
+      "productId": "PROD-20002",
+      "name": "Smartphone",
+      "description": "Latest smartphone with advanced features",
+      "category": "Electronics",
+      "price": 999.99,
+      "inventoryStatus": "Out of Stock",
+      "imageUrl": "https://example.com/smartphone.jpg"
+    },
+    {
+      "productId": "PROD-20003",
+      "name": "Tablet",
+      "description": "Lightweight tablet for entertainment and productivity",
+      "category": "Electronics",
+      "price": 399.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/tablet.jpg"
+    },
+    {
+      "productId": "PROD-20004",
+      "name": "Desktop Computer",
+      "description": "Powerful desktop for gaming and content creation",
+      "category": "Electronics",
+      "price": 1499.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/desktop.jpg"
+    },
+    {
+      "productId": "PROD-20005",
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse for comfortable use",
+      "category": "Accessories",
+      "price": 29.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/mouse.jpg"
+    },
+    {
+      "productId": "PROD-20006",
+      "name": "Keyboard",
+      "description": "Mechanical keyboard for enhanced typing experience",
+      "category": "Accessories",
+      "price": 79.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/keyboard.jpg"
+    },
+    {
+      "productId": "PROD-20007",
+      "name": "Monitor",
+      "description": "High-resolution monitor for crisp visuals",
+      "category": "Electronics",
+      "price": 249.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/monitor.jpg"
+    },
+    {
+      "productId": "PROD-20008",
+      "name": "Printer",
+      "description": "All-in-one printer for home and office use",
+      "category": "Electronics",
+      "price": 149.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/printer.jpg"
+    },
+    {
+      "productId": "PROD-20009",
+      "name": "External Hard Drive",
+      "description": "Portable external hard drive for data storage",
+      "category": "Accessories",
+      "price": 99.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/harddrive.jpg"
+    },
+    {
+      "productId": "PROD-20010",
+      "name": "Webcam",
+      "description": "High-definition webcam for video conferencing",
+      "category": "Electronics",
+      "price": 49.99,
+      "inventoryStatus": "In Stock",
+      "imageUrl": "https://example.com/webcam.jpg"
+    }
+  ]
+}

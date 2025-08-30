@@ -1,0 +1,14 @@
+<mvc:View
+        controllerName="converted.registrationview.controller.SecondView"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true"
+        xmlns="sap.m">
+    <Page
+            id="secondPage"
+            title="Second View">
+        <content>
+            <Text
+                    text="This is the second view."/>
+        </content>
+    </Page>
+</mvc:View>

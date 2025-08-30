@@ -1,19 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m"
-  xmlns:layout="sap.ui.layout"
-  xmlns:form="sap.ui.layout.form"
-  xmlns:core="sap.ui.core"
-  xmlns:richtexteditor="sap.ui.richtexteditor"
-  xmlns:viz="sap.viz.ui5"
-  controllerName="preview.app.controller.RegistrationView"
-  displayBlock="true">
-  <Page title="RegistrationView" enableScrolling="true">
+          xmlns="sap.m"
+          xmlns:layout="sap.ui.layout"
+          xmlns:form="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          controllerName="converted.registrationview.controller.RegistrationView"
+          displayBlock="true">
+  <Page title="Registration Form" enableScrolling="true">
     <content>
-      <Title id="title_io8n51oi" text="Registration Form"/>
-      <form:SimpleForm id="formContainer">
+      <form:SimpleForm id="formContainer"
+                       editable="true"
+                       layout="ResponsiveGridLayout"
+                       title="Registration Form"
+                       labelSpanXL="4"
+                       labelSpanL="4"
+                       labelSpanM="12"
+                       labelSpanS="12"
+                       adjustLabelSpan="false"
+                       emptySpanXL="0"
+                       emptySpanL="0"
+                       emptySpanM="0"
+                       emptySpanS="0"
+                       columnsXL="2"
+                       columnsL="2"
+                       columnsM="1">
         <form:content>
-          <!-- Empty SimpleForm content -->
+          <Label id="firstNameLabel" text="First Name" required="true"/>
+          <Input id="firstNameField" value="{/firstName}" placeholder="Enter first name" ariaLabelledBy="firstNameLabel"/>
+
+          <Label id="lastNameLabel" text="Last Name" required="true"/>
+          <Input id="lastNameField" value="{/lastName}" placeholder="Enter last name" ariaLabelledBy="lastNameLabel"/>
+
+          <Label id="emailLabel" text="Email" required="true"/>
+          <Input id="emailField" value="{/email}" type="Email" placeholder="Enter email" ariaLabelledBy="emailLabel"/>
+
+          <Label id="phoneNumberLabel" text="Phone Number"/>
+          <Input id="phoneNumberField" value="{/phoneNumber}" type="Tel" placeholder="Enter phone number" ariaLabelledBy="phoneNumberLabel"/>
+
+          <Label id="addressLabel" text="Address"/>
+          <Input id="addressField" value="{/address}" placeholder="Enter address" ariaLabelledBy="addressLabel"/>
+
+          <Label id="cityLabel" text="City"/>
+          <Input id="cityField" value="{/city}" placeholder="Enter city" ariaLabelledBy="cityLabel"/>
+
+          <Label id="countryLabel" text="Country"/>
+          <Select id="countryDropDown" selectedKey="{/countryKey}" ariaLabelledBy="countryLabel">
+            <core:Item key="US" text="United States"/>
+            <core:Item key="CA" text="Canada"/>
+            <core:Item key="UK" text="United Kingdom"/>
+          </Select>
+
+          <Button id="submitButton" text="Submit" press="onSubmit" tooltip="Submit Registration"/>
+
+          <MessageStrip
+            text="Please fill in all required fields."
+            type="Warning"
+            showIcon="true"
+            showCloseButton="true"/>
+
+          <Button id="messagePopoverBtn"
+                  icon="sap-icon://message-popup"
+                  press="handleMessagePopoverPress"
+                  ariaHasPopup="Dialog"/>
         </form:content>
       </form:SimpleForm>
     </content>

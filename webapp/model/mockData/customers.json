@@ -1,0 +1,124 @@
+{
+  "customers": [
+    {
+      "customerId": "CUST-10001",
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "john.smith@example.com",
+      "phoneNumber": "555-123-4567",
+      "address": "123 Main St",
+      "city": "Anytown",
+      "country": "USA",
+      "creationDate": "2023-01-15",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10002",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "email": "alice.johnson@example.com",
+      "phoneNumber": "555-987-6543",
+      "address": "456 Oak Ave",
+      "city": "Springfield",
+      "country": "USA",
+      "creationDate": "2023-02-20",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10003",
+      "firstName": "Bob",
+      "lastName": "Williams",
+      "email": "bob.williams@example.com",
+      "phoneNumber": "555-555-5555",
+      "address": "789 Pine Ln",
+      "city": "Hill Valley",
+      "country": "USA",
+      "creationDate": "2023-03-10",
+      "status": "Inactive"
+    },
+    {
+      "customerId": "CUST-10004",
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "email": "emily.brown@example.com",
+      "phoneNumber": "555-111-2222",
+      "address": "101 Elm St",
+      "city": "Gotham City",
+      "country": "USA",
+      "creationDate": "2023-04-05",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10005",
+      "firstName": "David",
+      "lastName": "Jones",
+      "email": "david.jones@example.com",
+      "phoneNumber": "555-333-4444",
+      "address": "222 Maple Ave",
+      "city": "Metropolis",
+      "country": "USA",
+      "creationDate": "2023-05-12",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10006",
+      "firstName": "Sarah",
+      "lastName": "Davis",
+      "email": "sarah.davis@example.com",
+      "phoneNumber": "555-777-8888",
+      "address": "333 Cherry Rd",
+      "city": "Sunnyvale",
+      "country": "USA",
+      "creationDate": "2023-06-01",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10007",
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "email": "michael.wilson@example.com",
+      "phoneNumber": "555-999-0000",
+      "address": "444 Oak St",
+      "city": "Riverside",
+      "country": "USA",
+      "creationDate": "2023-07-18",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10008",
+      "firstName": "Linda",
+      "lastName": "Garcia",
+      "email": "linda.garcia@example.com",
+      "phoneNumber": "555-444-5555",
+      "address": "555 Pine Ave",
+      "city": "Oceanview",
+      "country": "USA",
+      "creationDate": "2023-08-25",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10009",
+      "firstName": "Christopher",
+      "lastName": "Rodriguez",
+      "email": "christopher.rodriguez@example.com",
+      "phoneNumber": "555-666-7777",
+      "address": "666 Elm St",
+      "city": "Mountainview",
+      "country": "USA",
+      "creationDate": "2023-09-02",
+      "status": "Active"
+    },
+    {
+      "customerId": "CUST-10010",
+      "firstName": "Angela",
+      "lastName": "Martinez",
+      "email": "angela.martinez@example.com",
+      "phoneNumber": "555-888-9999",
+      "address": "777 Maple Rd",
+      "city": "Lakeside",
+      "country": "USA",
+      "creationDate": "2023-10-09",
+      "status": "Active"
+    }
+  ]
+}
