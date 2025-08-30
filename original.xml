@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebDynpro xmlns="http://www.sap.com/wd/webdynpro">
+  <View name="RegistrationView">
+    <Title>Registration Form</Title>
+    <FormContainer id="formContainer">
+      <FormElement id="firstNameElement">
+        <Label id="firstNameLabel" text="First Name"/>
+        <InputField id="firstNameField" value="{/firstName}"/>
+      </FormElement>
+      <FormElement id="lastNameElement">
+        <Label id="lastNameLabel" text="Last Name"/>
+        <InputField id="lastNameField" value="{/lastName}"/>
+      </FormElement>
+      <FormElement id="emailElement">
+        <Label id="emailLabel" text="Email"/>
+        <InputField id="emailField" value="{/email}"/>
+      </FormElement>
+      <FormElement id="phoneNumberElement">
+        <Label id="phoneNumberLabel" text="Phone Number"/>
+        <InputField id="phoneNumberField" value="{/phoneNumber}"/>
+      </FormElement>
+      <FormElement id="addressElement">
+        <Label id="addressLabel" text="Address"/>
+        <InputField id="addressField" value="{/address}"/>
+      </FormElement>
+      <FormElement id="cityElement">
+        <Label id="cityLabel" text="City"/>
+        <InputField id="cityField" value="{/city}"/>
+      </FormElement>
+      <FormElement id="countryElement">
+          <Label id="countryLabel" text="Country"/>
+          <DropDownByKey id="countryDropDown" key="{/countryKey}" text="{/countryText}"/>
+      </FormElement>
+      <FormElement id="submitButtonElement">
+        <Button id="submitButton" text="Submit" pressed="{/submitPressed}"/>
+      </FormElement>
+      <MessageArea id="messageArea"/>
+    </FormContainer>
+  </View>
+  <Controller name="RegistrationViewController">
+    <!-- WDDOINIT -->
+    <method name="WDDOINIT">
+      <![CDATA[
+        // Initialize data here.  For example:
+        wdContext.nodeRegistrationData.bind(wdContext.createRegistrationDataNode());
+        //Populate Country Dropdown -  This would typically involve a call to a model or service.  Replace with your actual data retrieval.
+        wdContext.nodeCountry.bind(wdContext.createCountryNode());
+        wdContext.nodeCountry.addElement(wdContext.createCountryElement("US","United States"));
+        wdContext.nodeCountry.addElement(wdContext.createCountryElement("CA","Canada"));
+        wdContext.nodeCountry.addElement(wdContext.createCountryElement("UK","United Kingdom"));
+
+      ]]>
+    </method>
+
+    <!-- onActionSubmit -->
+    <method name="onActionSubmit">
+      <![CDATA[
+        // Handle submit button press.
+        // Validate input fields.  Example:
+        if (wdContext.nodeRegistrationData.currentRegistrationDataElement.getFirstName() === "") {
+          wdComponentAPI.getMessageManager().reportSuccess("Please enter your first name.");
+          return;
+        }
+
+        //Save data (replace with your actual save logic).
+        // ... save data to backend ...
+
+        wdComponentAPI.getMessageManager().reportSuccess("Registration successful!");
+        wdContext.nodeRegistrationData.bind(wdContext.createRegistrationDataNode()); //Clear the form
+
+      ]]>
+    </method>
+
+
+  </Controller>
+</WebDynpro>
